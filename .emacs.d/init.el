@@ -27,6 +27,8 @@
 (setq show-trailing-whitespace t)
 (setq suggest-key-bindings t)
 (setq vc-follow-symlinks t)
+ ;; use spaces instead of tabs when indenting
+(setq-default indent-tabs-mode nil)
 
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
@@ -72,6 +74,6 @@
 (load "js-config.el")
 (add-to-list 'load-path "~/.emacs.d/jade-mode") ;; github.com/brianc/jade-mode
 (require 'sws-mode)
-(require 'jade-mode)    
+(require 'jade-mode)
 (add-to-list 'auto-mode-alist '("\\.styl$" . sws-mode))
 (add-to-list 'auto-mode-alist '("\\.jade$" . jade-mode))
