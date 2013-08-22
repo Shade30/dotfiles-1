@@ -29,6 +29,7 @@
 (setq vc-follow-symlinks t)
  ;; use spaces instead of tabs when indenting
 (setq-default indent-tabs-mode nil)
+(setq-default whitespace-style '(tabs spaces trailing lines space-before-tab newline indentation:space empty space-after-tab space-mark tab-mark newline-mark))
 
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
