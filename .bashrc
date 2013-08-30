@@ -219,9 +219,14 @@ if [ -s ~/.nvm/nvm.sh ]; then
     nvm use v0.10.12 &> /dev/null # silence nvm use; needed for rsync
 fi
 
+# 2.8) ruby on rails and rvm
+source ~/.rvm/scripts/rvm
+
 ## ------------------------------
 ## -- 3) User-customized code  --
 ## ------------------------------
 
 ## Define any user-specific variables you want here.
 source ~/.bashrc_custom
+
+PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
