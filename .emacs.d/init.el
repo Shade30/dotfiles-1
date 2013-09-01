@@ -78,3 +78,9 @@
 (require 'jade-mode)
 (add-to-list 'auto-mode-alist '("\\.styl$" . sws-mode))
 (add-to-list 'auto-mode-alist '("\\.jade$" . jade-mode))
+
+;; --------------------
+;; -- Rails Reloaded --
+;; --------------------
+(setq load-path (cons (expand-file-name "~/.emacs.d/rails-reloaded") load-path)) ;; github.com/dima-exe/emacs-rails-reloaded
+(require 'rails-autoload)
