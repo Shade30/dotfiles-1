@@ -84,3 +84,12 @@
 ;; --------------------
 (setq load-path (cons (expand-file-name "~/.emacs.d/rails-reloaded") load-path)) ;; github.com/dima-exe/emacs-rails-reloaded
 (require 'rails-autoload)
+
+;; ---------------
+;; -- emacs-pry --
+;; ---------------
+(add-to-list 'load-path "~/.emacs.d/emacs-pry")
+(require 'pry)
+;; optional suggestions
+(global-set-key [S-f9] 'pry-intercept)
+(global-set-key [f9] 'pry-intercept-rerun)
