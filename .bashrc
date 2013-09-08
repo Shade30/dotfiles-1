@@ -220,7 +220,9 @@ if [ -s ~/.nvm/nvm.sh ]; then
 fi
 
 # 2.8) ruby on rails and rvm
-source ~/.rvm/scripts/rvm
+if [ -s ~/.rvm/scripts/rvm ]; then
+    source ~/.rvm/scripts/rvm
+fi
 
 ## ------------------------------
 ## -- 3) User-customized code  --
